@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+
+/***** nav *****/
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgba(83, 95, 164, 0.7);
+  padding: 1rem;
+}
+
+#logo {
+  border-radius: 50%;
+}
+
+a {
+  margin: 0 1rem;
+  color: white;
+}
+
+#history {
+  justify-self: end;
+}
+
+/***** sections *****/
+.section {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.section-bg {
+  width: 100%;
+  height: 100%;
+}
+
+/***** section 1 *****/
+
+.site-title {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+#title-2 {
+  color: rgba(12, 20, 65, 0.7);
+}
+
+@media (max-width: 200px) {
+  /* .section-one {
+    background: url("./images/mountain.jpeg");
+  } */
+
+  #section-one-bg {
+    display: none;
+  }
+
+  .site-title {
+    font-size: 4rem;
+    text-align: center;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 5px;
+    transform: scaleY(1.5);
+    line-height: 120%;
+    font-weight: lighter;
+  }
+}
