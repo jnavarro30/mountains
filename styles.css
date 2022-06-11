@@ -127,3 +127,18 @@ p {
   font-family: sans-serif;
   padding: 0.2rem;
 }
+
+/***** footer *****/
+
+.footer {
+  background-color: rgb(30, 30, 73);
+  padding: 0.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.copy {
+  color: rgba(83, 95, 164, 0.9);
+  font-size: 0.6rem;
+}
