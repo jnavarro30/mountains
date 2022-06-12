@@ -142,3 +142,70 @@ p {
   color: rgba(83, 95, 164, 0.9);
   font-size: 0.6rem;
 }
+
+/***** mobile *****/
+
+.container-2 {
+  display: none;
+}
+
+.item {
+  border: 2px solid black;
+}
+
+.prime {
+  border: 2px solid black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(83, 95, 164, 0.9);
+  color: white;
+}
+
+.sub {
+  display: none;
+}
+
+.open-prime {
+  height: 10%;
+}
+
+.open-sub {
+  height: 90%;
+  display: block;
+}
+/***** responsive ******/
+
+@media (max-width: 450px) {
+  .container {
+    display: none;
+  }
+  .container-2 {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    display: grid;
+  }
+
+  .section {
+    height: 100%;
+  }
+
+  .item:hover {
+    cursor: pointer;
+  }
+
+  .section-three {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .card {
+    position: static;
+    padding: 1rem;
+    margin: 0;
+    left: 0;
+  }
+}
