@@ -73,28 +73,13 @@ a {
   font-size: 0.8rem;
 }
 
-/***** section 1 *****/
-
-.site-title {
-  font-size: 4rem;
-  color: rgba(0, 0, 0, 0.6);
-  display: none;
-}
-
-#title-2 {
-  color: rgba(12, 20, 65, 0.7);
-}
-
 /***** section 2 *****/
-.section-two {
-  position: relative;
-}
-
-/***** section 3 *****/
+.section-two,
 .section-three {
   position: relative;
 }
 
+/***** section 3 *****/
 .section-banner-3 {
   width: 100%;
   padding: 0 10%;
