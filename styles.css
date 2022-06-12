@@ -185,13 +185,13 @@ p {
   display: flex;
   align-items: center;
 }
+
 .gallery {
- 
   height: 100%;
   width: 100%;
   bottom: 0;
   display: flex;
-  
+  justify-content: center;
 }
 
 .img {
@@ -200,7 +200,9 @@ p {
 }
 
 i {
-
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
 }
 
 i:hover {
@@ -213,6 +215,7 @@ i:hover {
   .container {
     display: none;
   }
+
   .container-2 {
     display: block;
     text-align: center;
