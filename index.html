@@ -254,17 +254,23 @@
 
   [...items].forEach((item) =>
     item.addEventListener("click", (e) => {
-      item.children[0].classList.toggle("open-prime");
-      item.children[1].classList.toggle("open-sub");
+
+      console.log(e.target.classList.contains('prime'));
+
+      if (e.target.classList.contains('prime')) {
+        item.children[0].classList.toggle("open-prime");
+        item.children[1].classList.toggle("open-sub");
+      } 
+      
     })
   );
 
-  const rightArrow = document.getElementsByClassName("fa-arrow-right");
-  const leftArrow = document.getElementsByClassName("fa-arrow-left");
+  const rightArrows = document.getElementsByClassName("fa-arrow-right");
+  const leftArrows = document.getElementsByClassName("fa-arrow-left");
   const imageEls = document.getElementsByClassName("img");
 
-  function arrows(elem, n) {
-    elem[0].addEventListener("click", () => {
+  function arrows(elem, i, n) {
+    elem[i].addEventListener("click", () => {
       [...imageEls].forEach((img) => {
         let matched = img.src.match(/\d/g);
         let num = Number(matched[matched.length - 1]);
@@ -278,6 +284,8 @@
     });
   }
 
-  arrows(leftArrow, 1);
-  arrows(rightArrow, -1);
+  arrows(leftArrows, 0, 1);
+  arrows(leftArrows, 1, 1);
+  arrows(rightArrows, 0, -1);
+  arrows(rightArrows, 1, -1);
 </script>
